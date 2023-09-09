@@ -72,9 +72,20 @@ nav ul li a:hover::after{
 .header-text h1{
     font-size: 40px;
     margin-top: 20px;
+    text-align:left;
+    top: 40px;
+    left: 10px;
+
 }
 .header-text h1 span{
     color: #ff004f;
+}
+.header-text p{
+    font-size: 20px;
+    text-align:left;
+    top: 10px;
+    left: 20px;
+    margin-top: 10%;
 }
 #element{
     font-size: 40px;
@@ -323,14 +334,26 @@ nav .fas{
     #header{
         background-image: url(./dharam1-removebg.png);
         width: 100%;
-        height: 70%;
+        height: auto;
     }
     .header-text{
-        margin-top: 100px;
+        margin-top: 20%;
         font-size: 8px;
+    
     }
     .header-text h1{
         font-size: 8px;
+        text-align:left;
+        margin-top: 01%;
+    }
+    .header-text p{
+        font-size: 8px;
+        text-align:left;
+        text-align:start;
+        margin-top: 20%;
+    }
+    .container{
+        padding: 25px 8%;
     }
     #element{
         font-size: 8px;
