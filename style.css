@@ -31,7 +31,7 @@ nav{
    
 }
 nav h3{
-    color: rgb(18, 19, 17);
+    color: rgba(242, 240, 238, 0.868);
 }
 nav span{
     color: #ff004f;
@@ -69,15 +69,15 @@ nav ul li a:hover::after{
     font-size: 20px;
     color: #080808;
 }
-.header-text h1{
-    font-size: 40px;
+.header-text h2{
+    font-size: 30px;
     margin-top: 20px;
     text-align:left;
     top: 40px;
     left: 10px;
 
 }
-.header-text h1 span{
+.header-text h2 span{
     color: #ff004f;
 }
 .header-text p{
@@ -89,7 +89,7 @@ nav ul li a:hover::after{
 }
 #element{
     font-size: 40px;
-    color: #3b04ef;
+    color: #2f13d2;
     
 }
 /* ---------------about----------- */
@@ -197,69 +197,127 @@ margin: 10px 0;
     transform: translateY(-10px);
 }
 /* --------------------------Portfolio------------------- */
-#portfolio{
+/* ---------------- Portfolio Section ---------------- */
+#portfolio {
     padding: 50px 0;
 }
-.work-list{
+
+/* Grid Layout for Projects */
+.work-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    grid-gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
     margin-top: 50px;
 }
-.work{
+
+/* Project Card Styling */
+.work {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
-.work img{
+.work a {
+    display: block; /* Ensures full clickable area */
     width: 100%;
     height: 100%;
+}
+
+
+/* Project Images */
+.work img {
+    width: 100%;
+    height: 250px;
     border-radius: 10px;
     display: block;
-    transition: transform 0.5s;
-    
+    object-fit: cover;
+    transition: transform 0.4s ease-in-out;
 }
-.layer{
+.work a, .work a * {
+    color: white;
+    text-decoration: none;
+}
+
+/* Overlay Layer */
+.layer {
     width: 100%;
-    height: 0%;
-    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
     border-radius: 10px;
     position: absolute;
+    top: 0;
     left: 0;
-    bottom: 0;
-    overflow: hidden;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    padding: 0 40px;
+    padding: 20px;
     text-align: center;
-    transition:height 0.5s;
-    font-size: 14px;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
 }
-.layer h3{
-    font-weight: 300px;
-    margin-bottom: 30px;
+
+/* Project Title */
+.layer h3 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: #fff;
 }
-.layer a{
-    margin-top: 20px;
-    color: #ff004f;
+
+/* Technology List */
+.project-tech {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-tech li {
+    background: rgba(255, 255, 255, 0.336);
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #fff;
+}
+
+/* Hover Effects */
+.work:hover img {
+    transform: scale(1.1);
+}
+
+.work:hover .layer {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Icon Button */
+.layer a {
+    margin-top: 15px;
+    color: #ddd9d9;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
-    background: #fff;
+    background: #df1c1c;
     width: 60px;
     height: 60px;
     border-radius: 50%;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease-in-out;
 }
-.work:hover img{
-    transform:scale(1.1)
-    
+
+.layer a:hover {
+    background: #ff004f;
+    color: #fff;
 }
-.work:hover .layer{
-    height: 100%;
-}
+
 /* -------------------contact--------- */
 .contact-left{
     flex-basis: 35;
@@ -416,4 +474,7 @@ nav .fas{
         color: #61b752;
         margin-top: -10px;
     }
+    .spaced-text {
+        margin-right: 20px; /* Adjust the value as needed */
+      }
 }
