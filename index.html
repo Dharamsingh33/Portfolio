@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dharam Singh Vislavath | Full Stack Java Developer</title>
+    <title>Dharam Singh Vislavath - Full Stack Developer</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/178b204fb4.js" crossorigin="anonymous"></script>
 </head>
@@ -19,7 +19,7 @@
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#services">Expertise</a></li>
+                    <li><a href="#services">Skills</a></li>
                     <li><a href="#portfolio">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <i class="fas fa-xmark" onclick="closemenu()"></i>
@@ -27,9 +27,9 @@
                 <i class="fas fa-bars" onclick="openmenu()"></i>   
             </nav>
             <div class="header-text">
-                <h1>Hi, I'm <span>Dharam Singh Vislavath</span></h1>
+                <h2>Hi, I'm <span>Dharam Singh Vislavath</span><br></h2>
                 <span id="element"></span><br>
-                <p>Full Stack Java Developer | Devops Engineer | MS in Computer Science @ UNT</p>
+                <p>Master's Student at University of North Texas <br>3+ Years Professional Experience as a Software Engineer</p>
             </div>
         </div>
     </div>
@@ -38,54 +38,63 @@
         <div class="container">
             <div class="row">
                 <div class="coloumn-1">
-                    <img src="./aboutme.jpg" alt="aboutme">
+                    <img src="./aboutme.jpg" alt="aboutme" style="width: 100%; height: 70%; ">
+
                 </div>
 
                 <div class="coloumn-2">
-                    <h1 class="subtitle">About Me</h1>
-                    <p>Results-driven Software Engineer with 3+ years of experience in Java full-stack development and DevOps. Proficient in building scalable, secure applications and optimizing databases with expertise in RESTful APIs, CI/CD, and microservices.</p>
+                    <h1 class="subtitle">About me</h1>
+                    <p>Results-driven Software Engineer with 3+ years of experience in full-stack development, cloud computing, and DevSecOps. Skilled in Java, React.js, Node.js, AWS, and Azure, with a passion for building scalable, secure, and high-performance applications.</p>
                     
                     <div class="tab-titles">
-                        <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links active-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('skills')">Technical Skills</p>
                         <p class="tab-links" onclick="opentab('Education')">Education</p>
                     </div>
-                    <div class="tab-contents active-tab" id="skills">
+                    <div class="tab-contents active-tab" id="Experience">
                         <ul>
-                            <li><span>Programming</span><br>Java, Python, JavaScript, TypeScript, Node.js, React.js</li>
-                            <li><span>Frameworks</span><br>Spring Boot, Hibernate/JPA, Next.js, Express.js</li>
-                            <li><span>Databases</span><br>PostgreSQL, MongoDB, MySQL, Redis</li>
-                            <li><span>Cloud & DevOps</span><br>AWS (EC2, S3, Lambda), Azure, Docker, Kubernetes, Jenkins, GitLab CI/CD</li>
-                            <li><span>Practices</span><br>Microservices, REST APIs, CI/CD, Agile, TDD, OOP, Design Patterns</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="Experience">
-                        <ul>
-                            <li><span>Tech Mahindra Ltd. - Software Engineer</span><br>
-                                • Improved Java app performance by 30% via multithreading<br>
-                                • Built Spring Boot APIs handling 50K+ daily requests<br>
-                                • Reduced server response time by 25% with Redis caching<br>
-                                • Achieved 95%+ test coverage with JUnit/Mockito<br>
-                                • Refactored legacy code using Java 8+ features<br>
-                                • Developed CI/CD pipelines with Jenkins/Docker
+                            <li>
+                                <span style="margin-right: 150px;">Tech Mahindra Ltd. - Software Engineer </span>      <span>   Nov 2021 - Jul 2023</span> 
+
+                                <ul class="nested-list">
+                                    <li>Enhanced Java application performance by 30% through efficient multithreading and robust exception handling</li>
+                                    <li>Developed and optimized RESTful APIs using Spring Boot, integrating an SQL database with Hibernate/JPA to handle 50K+ daily requests</li>
+                                    <li>Boosted execution efficiency by 30% for 15K+ active users using multithreading and performance tuning</li>
+                                    <li>Reduced server response time by 25% through Redis caching and load balancing optimization</li>
+                                    <li>Implemented design patterns to enhance system architecture, scalability, and code reusability</li>
+                                </ul>
                             </li>
-                            <li><span>Nexa Systems, Inc. - Software Engineer</span><br>
-                                • Developed microservices with Java/Spring Boot/React<br>
-                                • Optimized SQL queries reducing execution time by 40%<br>
-                                • Containerized apps with Docker/Kubernetes<br>
-                                • Implemented AWS serverless solutions<br>
-                                • Enhanced GitLab CI/CD pipelines reducing release cycles by 50%
+                            <li>
+                                <span style="margin-right: 150px;">Nexa Systems, Inc. - Software Engineer</span>      <span> Jun 2020 - Nov 2021  </span>
+                                <ul class="nested-list">
+                                    <li>Developed microservices-based applications using Java, Spring Boot, React.js, and RESTful APIs</li>
+                                    <li>Optimized SQL queries in PostgreSQL and MongoDB, reducing execution time by 40%</li>
+                                    <li>Designed and deployed containerized applications with Docker and Kubernetes</li>
+                                    <li>Implemented serverless solutions using AWS Lambda and DynamoDB, cutting infrastructure costs</li>
+                                    <li>Enhanced GitLab CI/CD pipelines, reducing release cycles by 50%</li>
+                                </ul>
                             </li>
                         </ul>
                     </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>Frontend</span><br>React.js, Next.js, HTML5, CSS3, Sass, JavaScript, TypeScript</li>
+                            <li><span>Backend</span><br>Node.js, Express, Java, Spring Boot, Python, FastAPI, RESTful APIs</li>
+                            <li><span>Databases</span><br>SQL, MySQL, PostgreSQL, MongoDB, DynamoDB, Hibernate/JPA, Redis</li>
+                            <li><span>Cloud & DevOps</span><br>AWS (Lambda, S3, ECS, DynamoDB), Azure, Docker, Kubernetes, Terraform, CI/CD (Jenkins, GitHub Actions)</li>
+                            <li><span>AI/ML</span><br>TensorFlow, PyTorch, Hugging Face NLP, Jupiter Notebook</li>
+                        </ul>
+                    </div>
+                
                     <div class="tab-contents" id="Education">
                         <ul>
                             <li><span>University of North Texas</span><br>
-                                MS in Computer Science (2023-2025)<br>
-                                Coursework: Databases, Software Engineering, Algorithms, Big Data
+                                Master of Science in Computer and Information Sciences<br>
+                                Aug 2023 - May 2025 | CGPA: 3.6/4.0<br>
+                                Coursework: Database Systems, Software Engineering, Algorithms, Big Data, Fundamentals Of DataBase
                             </li>
-                            <li><span>Osmania University</span><br>
-                                BE in Electronics & Communication Engineering<br>
+                            <li><span>University College of Engineering, Osmania University</span><br>
+                                Bachelor of Engineering in Electronics and Communication<br>
                                 GPA: 7.84/10
                             </li>
                         </ul>
@@ -99,20 +108,22 @@
     <div class="container">
         <h1 class="subtitle">Technical Expertise</h1>
         <div class="service-list">
+             
             <div>
-                <i class="fa-brands fa-java"></i>
-                <h2>Java Development</h2>
-                <p>Expertise in Spring Boot, Hibernate, and microservices architecture. Experience optimizing Java applications with multithreading and performance tuning. Strong background in RESTful API development and database integration.</p>
+                <i class="fa-solid fa-brain"></i>
+                <h2>Java Full Stack Developer</h2>
+                <p>Expertise in Spring Boot, Hibernate, and microservices architecture. <br>Experience optimizing Java applications with multithreading and performance tuning. <br>Strong background in RESTful API development and database integration.</p>
             </div>
             <div>
-                <i class="fa-solid fa-cloud"></i>
+                <i class="fa-solid fa-code"></i>
+                <h2> MERN Stack Developer</h2>
+                <p>Experienced in building scalable web applications using modern frameworks like React, Next.js, and Vue.js.<br> Strong expertise in RESTful API development with Node.js and Spring Boot. <br>Skilled in database design and optimization with both SQL and NoSQL solutions.</p>
+            </div>
+           
+            <div>
+                <i class="fa-brands fa-aws"></i>
                 <h2>Cloud & DevOps</h2>
-                <p>Proficient in AWS services (EC2, S3, Lambda) and containerization with Docker/Kubernetes. Experience building CI/CD pipelines with Jenkins and GitLab. Implemented infrastructure optimizations reducing costs and improving reliability.</p>
-            </div>
-            <div>
-                <i class="fa-solid fa-database"></i>
-                <h2>Full Stack Development</h2>
-                <p>Skilled in React.js, Next.js, and modern JavaScript frameworks. Strong database expertise with PostgreSQL, MongoDB, and query optimization. Experience building responsive UIs and integrating with backend services.</p>
+                <p>Proficient in AWS services (Lambda, S3, ECS, DynamoDB) and Azure DevOps. Experience with containerization (Docker, Kubernetes) and infrastructure as code (Terraform). <br>Built CI/CD pipelines with Jenkins and GitHub Actions for automated deployments.</p>
             </div>
         </div>
     </div>
@@ -123,85 +134,94 @@
         <h1 class="subtitle">Featured Projects</h1>
         <div class="work-list">
             <div class="work">
-                <img src="./microservices.jpg" alt="Microservices Architecture">
+                <a href="https://www.overleaf.com/read/sdbjyknhsktx#972418" target="_blank">
+                <img src="./ML_pr.png" alt="Machine Learning-based Recommendation System" >
                 <div class="layer">
+                    <h3>Machine Learning-based Recommendation System</h3>
+                    <p>• Engineered a machine learning-based recommendation system using Spring Boot, TensorFlow, and React for the frontend,
+                        achieving a 30% increase in user engagement by analyzing past purchases and preferences.</p>
+                    <ul class="project-tech">
+                        <li>Spring Boot</li>
+                        <li>Machine Learning</li>
+                        <li>React</li>
+                        <li>TensorFlow</li>
+                        <li>Kubernetes</li>
+                    </ul>
+                </div></a>
+            </div>
+            <div class="work">
+            
+                <a href="https://github.com/VislavathDharam?tab=repositories" target="_blank">
+                 <img src="./jfa.webp" alt="High Performance APIs">
+                  <div class="layer">
                     <h3>High-Performance REST APIs</h3>
-                    <p>Spring Boot microservices handling 50K+ daily requests with 30% performance improvement through multithreading and Redis caching</p>
-                    <ul class="tech-stack">
+                    <p>Spring Boot APIs handling 50K+ daily requests with 30% performance improvement through multithreading and Redis caching</p>
+                    <ul class="project-tech">
                         <li>Java</li>
                         <li>Spring Boot</li>
                         <li>Redis</li>
+                        <li>Hibernate</li>
                         <li>Docker</li>
                     </ul>
-                </div>
+                </div></a>
             </div>
             <div class="work">
-                <img src="./realtime-chat.jpg" alt="Real-time Chat Application">
+                <a href="https://github.com/VislavathDharam/Chat_app" target="_blank">
+                <img src="./Chat.png" alt="Chat Application">
                 <div class="layer">
                     <h3>Real-time Chat Application</h3>
-                    <p>Secure messaging platform with WebSockets and Spring Security, improving communication speed by 40%</p>
-                    <ul class="tech-stack">
-                        <li>Spring Boot</li>
-                        <li>WebSockets</li>
-                        <li>React</li>
+                    <p>Developed a real-time chat application with secure user authentication using Spring Security and WebSocket’s,<br> Optimized database management with Spring Data JPA and created a responsive UI using HTML, CSS, and JavaScript,</p>
+                    <ul class="project-tech">
+                        <li>HTML, CSS, and JavaScript</li>
+                        <li>Spring Data JPA</li>
+                        <li>Spring Security and WebSocket’s</li>
                         <li>JWT</li>
                     </ul>
-                </div>
+                </div></a>
             </div>
             <div class="work">
-                <img src="./ml-recommendation.jpg" alt="ML Recommendation System">
-                <div class="layer">
-                    <h3>ML Recommendation System</h3>
-                    <p>Personalized product recommendations using TensorFlow and Spring Boot, increasing user engagement by 30%</p>
-                    <ul class="tech-stack">
-                        <li>TensorFlow</li>
-                        <li>Spring Boot</li>
-                        <li>React</li>
-                        <li>REST API</li>
-                    </ul>
-                </div>
-            </div>
-            <!-- PDF Evaluator -->
-            <div class="work">
-                <img src="./pdf-evaluator.jpg" alt="PDF Evaluator">
-                <div class="layer">
-                    <h3>PDF Evaluator</h3>
-                    <p>Secure e-commerce platform with PDF analysis features, implementing transaction security and data protection</p>
-                    <ul class="tech-stack">
-                        <li>HTML/CSS</li>
-                        <li>JavaScript</li>
-                        <li>Security</li>
-                        <li>E-commerce</li>
-                    </ul>
-                </div>
-            </div>
-            <!-- Law Firm Management System -->
-            <div class="work">
-                <img src="./law-firm-system.jpg" alt="Law Firm Management System">
+                <a href="https://google.com" target="_blank">
+                    <img src="./Law_firm.jpeg" alt="Law Firm Management System">
+               <!-- This is a comment and will not be displayed in the browser <img src="/Users/dharamsinghvislavath/Desktop/Dharam/portfolio/Law_firm.jpeg" alt="Law Firm Management System"> --> 
                 <div class="layer">
                     <h3>Law Firm Management System</h3>
                     <p>TypeScript-based application for managing legal cases with secure authentication and role-based controls</p>
-                    <ul class="tech-stack">
+                    <ul class="project-tech">
                         <li>TypeScript</li>
                         <li>Node.js</li>
                         <li>Authentication</li>
                         <li>RBAC</li>
                     </ul>
-                </div>
+                </div></a>
             </div>
-            <!-- Hack The Box -->
             <div class="work">
-                <img src="./hack-the-box.jpg" alt="Hack The Box">
+                <a href="https://github.com/VislavathDharam/HacTheBox" target="_blank">
+                <img src="./Hack_thebox.png" alt="Hack The Box">
                 <div class="layer">
                     <h3>Hack The Box</h3>
                     <p>Security challenge platform with PHP scripts for penetration testing and ethical hacking exercises</p>
-                    <ul class="tech-stack">
+                    <ul class="project-tech">
                         <li>PHP</li>
                         <li>Security</li>
                         <li>Penetration Testing</li>
                         <li>Ethical Hacking</li>
                     </ul>
-                </div>
+                </div></a>
+            </div>
+            <!-- PDF Evaluator -->
+            <div class="work">
+                <a href="https://github.com/VislavathDharam/PDF_Evaluator" target="_blank">
+                <img src="./PdfEval.jpeg" alt="PDF Evaluator">
+                <div class="layer">
+                    <h3>PDF Evaluator</h3>
+                    <p>Secure e-commerce platform with PDF analysis features, implementing transaction security and data protection</p>
+                    <ul class="project-tech">
+                        <li>HTML/CSS</li>
+                        <li>JavaScript</li>
+                        <li>Security</li>
+                        <li>E-commerce</li>
+                    </ul>
+                </div></a>
             </div>
         </div>
     </div>
@@ -217,7 +237,8 @@
                 <p><i class="fa-solid fa-location-dot"></i> Texas, United States</p>
                 <div class="social-icons">
                     <a href="https://www.linkedin.com/in/vislavathdharamsingh/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/Dharamsingh33" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://github.com/VislavathDharam?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://vislavathdharam.github.io/Portfolio/" target="_blank"><i class="fa-solid fa-globe"></i></a>
                 </div>
                 <a href="./DHARAM_SINGH_VISLAVATH.pdf" download class="button">Download Resume</a>
             </div>
@@ -226,21 +247,21 @@
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="button">Submit</button>
+                    <button type="submit" class="button">Send Message</button>
                 </form>
                 <span id="msg"></span>
             </div>
         </div>
     </div>
     <div class="copyright">
-         <p>Copyright © 2023 Dharam Singh Vislavath. All rights reserved.</p>
+         <p>Copyright © 2025 Dharam Singh Vislavath. All rights reserved.</p>
     </div>
 </div>
 
 <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 <script>
     var typed = new Typed('#element', {
-      strings: ['<b>Java Full Stack Developer</b>', '<b>Cloud Engineer</b>', '<b>DevOps Specialist</b>', '<b>MS Computer Science</b>'],
+      strings: ['<b>Full Stack Developer</b>', '<b>Java Developer</b>','<b>Cloud Engineer</b>',  '<b>AI Enthusiast</b>'],
       typeSpeed: 100,
       loop: true
     });
